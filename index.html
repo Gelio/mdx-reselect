@@ -5,7 +5,7 @@
 <meta name='viewport' content='width=device-width,initial-scale=1'>
 <style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0}</style>
 <meta name='generator' content='mdx-deck'>
-<title data-head="true">Reselect</title><style data-styled-components="guqeLg kmKUJZ gKaMTo zIEGn enxKql dYzIWH jKjVCu jHprQs bJSzQT iDQISK czxQiJ eCoqJu cgkYdk kVSTZj gjsVpB fhSvky iLvMQI bIQQAp bBrRcM cXgiMa kaUAEP gtARdA hOCGEu fbxTAJ bNhvRs">
+<title data-head="true">Reselect</title><style data-styled-components="guqeLg kmKUJZ gKaMTo zIEGn enxKql dYzIWH jKjVCu kAzjOl eIIwaK jHprQs bJSzQT iDQISK czxQiJ eCoqJu cgkYdk kVSTZj gjsVpB fhSvky iLvMQI bIQQAp bBrRcM cXgiMa kaUAEP gtARdA hOCGEu fbxTAJ bNhvRs">
 /* sc-component-id: sc-bdVaJa */
 .sc-bdVaJa {} .czxQiJ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%;} @media print{.czxQiJ{display:none;}}.eCoqJu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:8px;margin-left:auto;margin-right:auto;} @media print{.eCoqJu{display:none;}}
 /* sc-component-id: sc-bwzfXH */
@@ -40,6 +40,10 @@
 .sc-chPdSV {} .gjsVpB{line-height:1.25;font-size:1.5em;margin-bottom:16px;margin-top:16px;color:heading;}
 /* sc-component-id: sc-kgoBCf */
 .sc-kgoBCf {}
+/* sc-component-id: sc-kGXeez */
+.sc-kGXeez {}
+/* sc-component-id: sc-kpOJdX */
+.sc-kpOJdX {}
 /* sc-component-id: sc-hMqMXs */
 .sc-hMqMXs {} .bBrRcM{color:#f00;}
 /* sc-component-id: sc-kEYyzF */
@@ -54,7 +58,7 @@
 .sc-iRbamj {} .iDQISK{width:100vw;height:100vh;}</style>
 </head>
 <body>
-<div id=root><div><div class="sc-dnqmqq guqeLg" mode="NORMAL" step="0" width="100vw" height="100vh" color="text"><div class="sc-bZQynM kmKUJZ"><div class="sc-gzVnrw gKaMTo"><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">How to <code class="sc-jWBwVP jKjVCu" color="code">reselect</code></h1></div></div><div class="sc-htoDjs zIEGn"><div><h2 class="sc-kAzzGY jHprQs sc-cSHVUG bJSzQT" font-size="3" color="heading">Problem</h2></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><pre style="color:#ccc;background:#2d2d2d;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto"><code style="color:#ccc;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="token" style="color:#cc99cd">import</span> <span class="token" style="color:#ccc">{</span> State <span class="token" style="color:#ccc">}</span> <span class="token" style="color:#cc99cd">from</span> <span class="token" style="color:#7ec699">&#x27;./types&#x27;</span><span class="token" style="color:#ccc">;</span>
+<div id=root><div><div class="sc-dnqmqq guqeLg" mode="NORMAL" step="0" width="100vw" height="100vh" color="text"><div class="sc-bZQynM kmKUJZ"><div class="sc-gzVnrw gKaMTo"><div class="sc-htoDjs zIEGn"><div><h1 class="sc-jzJRlG enxKql sc-fjdhpX dYzIWH" font-size="4" color="heading">How to <code class="sc-jWBwVP jKjVCu" color="code">reselect</code></h1><h4 class="sc-kpOJdX kAzjOl sc-kGXeez eIIwaK" font-size="2">A simple guide by Grzegorz Rozdzialik</h4></div></div><div class="sc-htoDjs zIEGn"><div><h2 class="sc-kAzzGY jHprQs sc-cSHVUG bJSzQT" font-size="3" color="heading">Problem</h2></div></div><div class="sc-htoDjs zIEGn"><div class="sc-iRbamj iDQISK"><div class="sc-bdVaJa czxQiJ"><div class="sc-iwsKbI cgkYdk" width="0.5"><pre style="color:#ccc;background:#2d2d2d;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto"><code style="color:#ccc;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="token" style="color:#cc99cd">import</span> <span class="token" style="color:#ccc">{</span> State <span class="token" style="color:#ccc">}</span> <span class="token" style="color:#cc99cd">from</span> <span class="token" style="color:#7ec699">&#x27;./types&#x27;</span><span class="token" style="color:#ccc">;</span>
 
 <span class="token" style="color:#cc99cd">const</span> state<span class="token" style="color:#ccc">:</span> State <span class="token" style="color:#67cdcc">=</span> <span class="token" style="color:#ccc">{</span>
   user<span class="token" style="color:#ccc">:</span> <span class="token" style="color:#ccc">{</span>
