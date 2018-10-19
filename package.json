@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Deck created with mdx-deck",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.4.18",
+    "mdx-deck": "^1.6.7",
+    "raw-loader": "^0.5.1"
+  },
+  "name": "mdx-reselect",
+  "dependencies": {
+    "reselect": "^4.0.0"
+  }
+}
